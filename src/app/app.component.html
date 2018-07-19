@@ -1,0 +1,7 @@
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item}}
+  </li>
+</ul>
+
+<input type="text" (keyup.enter)="submitValue(inpText)" #inpText>
